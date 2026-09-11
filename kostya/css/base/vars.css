@@ -1,0 +1,25 @@
+:root {
+  /* font-family */
+  --font-family: "Inter", sans-serif;
+  --second-family: "Sora", sans-serif;
+  --third-family: "Young Serif", sans-serif;
+
+  /* colors */
+  --bg-page-color: #1e1e1e;
+  --green-history-color: #2f855a;
+  --grey-history-color: #3a4553;
+  --yellow-history-color: #d69e2e;
+  --red-history-color: #d62e2e;
+  --text-main-color: #fff;
+  --text-secondary-color: #000;
+  --button-start-color: #197b2a;
+  --button-bet-color: #252525;
+  --input-color: #484848;
+  
+  /* container */
+  --container-width: 1240px;
+  --container-padding: 15px;
+
+  /* transition */
+  --transition-time: 0.2s;
+}
