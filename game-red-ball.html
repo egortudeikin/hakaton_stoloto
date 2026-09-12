@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Игра - красный воздушный шар</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/blocks/theme-select.css">
+    <link rel="stylesheet" href="./css/blocks/game.css">
   </head>
   <body class="page__body">
     <header class="container header__container">
@@ -206,5 +208,106 @@
         </div>
       </section>
     </main>
+    <div class="result-popup" id="win-popup">
+    <div class="result-popup__card result-popup__card--win">
+
+        <button class="result-popup__close" type="button">×</button>
+
+        <h2 class="result-popup__title">
+            ПОБЕДА!
+        </h2>
+
+        <img
+            class="result-popup__image"
+            src="./decor/trophy.svg"
+            alt="Трофей"
+        >
+
+        <p class="result-popup__multiplier">
+            13.45x
+        </p>
+
+        <div class="result-popup__line"></div>
+
+        <p class="result-popup__text">
+            могли забрать –
+            <span class="result-popup__highlight">15.55x</span>
+        </p>
+
+        <div class="result-popup__numbers result-popup__numbers--win">
+            <span>1345 B</span>
+            <span>130 elo</span>
+        </div>
+
+        <div class="result-popup__line"></div>
+
+        <div class="result-popup__buttons">
+            <a
+                class="result-popup__button result-popup__button--exit"
+                href="./index.html"
+            >
+                Выйти
+            </a>
+
+            <button
+                class="result-popup__button result-popup__button--again"
+                type="button"
+            >
+                Играть снова
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="result-popup" id="lose-popup">
+    <div class="result-popup__card result-popup__card--lose">
+
+        <button class="result-popup__close" type="button">×</button>
+
+        <h2 class="result-popup__title">
+            НЕ ПОВЕЗЛО!
+        </h2>
+
+        <img
+            class="result-popup__image"
+            src="./decor/bomb.svg"
+            alt="Взрыв"
+        >
+
+        <p class="result-popup__multiplier">
+            1.55x
+        </p>
+
+        <div class="result-popup__line"></div>
+
+        <p class="result-popup__text">
+            раунд окончен –
+            <span class="result-popup__highlight">1.55x</span>
+        </p>
+
+        <div class="result-popup__numbers result-popup__numbers--lose">
+            <span>100 B</span>
+            <span>50 elo</span>
+        </div>
+
+        <div class="result-popup__line"></div>
+
+        <div class="result-popup__buttons">
+            <a
+                class="result-popup__button result-popup__button--exit"
+                href="./index.html"
+            >
+                Выйти
+            </a>
+
+            <button
+                class="result-popup__button result-popup__button--again"
+                type="button"
+            >
+                Сыграть снова
+            </button>
+        </div>
+    </div>
+</div>
   </body>
 </html>
