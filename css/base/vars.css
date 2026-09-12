@@ -1,8 +1,9 @@
 :root {
   /* font-family */
   --font-family: "Inter", sans-serif;
-  --second-family: "Sora", sans-serif;
-  --third-family: "Young Serif", sans-serif;
+  --second-family: "JejuMyeongjo", sans-serif;
+  --third-family: "Sora", sans-serif;
+  --font3: "Young Serif", sans-serif;
 
   /* colors */
   --bg-page-color: #1e1e1e;
