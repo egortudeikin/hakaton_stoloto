@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Хакатон</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="page__body">
+    <main class="main">
+      <section class="section game">
+        <div class="container game__container">
+          <div class="game__birds">
+            <svg class="game__bird game__bird--left" width="101" height="101">
+              <use href="./decor/bird.svg"></use>
+            </svg>
+            <svg class="game__bird game__bird--center" width="101" height="101">
+              <use href="./decor/bird.svg"></use>
+            </svg>
+            <svg class="game__bird game__bird--right" width="101" height="101">
+              <use href="./decor/bird.svg"></use>
+            </svg>
+          </div>
+          <div class="game__clouds">
+            <svg class="game__cloud game__cloud--left" width="340" height="148">
+                <use href="./decor/cloud1.svg"></use>
+            </svg>
+            <svg class="game__cloud game__cloud--right" width="339" height="138">
+                <use href="./decor/cloud2.svg"></use>
+            </svg>
+          </div>
+          <div class="game__levels">
+            <div class="game__level game__level--no-active" data-level="12">
+                <p class="game__level-number">12</p>
+            </div>
+            <div class="game__level game__level--no-active" data-level="11">
+                <p class="game__level-number">11</p>
+            </div>
+            <div class="game__level game__level--no-active" data-level="10">
+                <p class="game__level-number">10</p>
+            </div>
+            <div class="game__level game__level--no-active" data-level="9">
+                <p class="game__level-number">9</p>
+            </div>
+            <div class="game__level game__level--active" data-level="8">
+                <p class="game__level-number">8</p>
+            </div>
+            <div class="game__level game__level--no-active" data-level="7">
+                <p class="game__level-number">7</p>
+            </div>
+            <div class="game__level game__level--no-active" data-level="6">
+                <p class="game__level-number">6</p>
+            </div>
+            <div class="game__level game__level--no-active" data-level="5">
+                <p class="game__level-number">5</p>
+            </div>
+            <div class="game__level game__level--no-active" data-level="4">
+                <p class="game__level-number">4</p>
+            </div>
+            <div class="game__level game__level--no-active" data-level="3">
+                <p class="game__level-number">3</p>
+            </div>
+            <div class="game__level game__level--no-active" data-level="2">
+                <p class="game__level-number">2</p>
+            </div>
+            <div class="game__level game__level--no-active" data-level="1">
+                <p class="game__level-number">1</p>
+            </div>
+          </div>
+          <div class="game__ratio">
+            <p class="game__ratio-value">1.00</p>
+            <p class="game__ratio-symbol">x</p>
+          </div>
+          <div class="game__ball">
+            <svg class="game__ball-red" width="176" height="235">
+                <use href="./decor/red-ball.svg"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

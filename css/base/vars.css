@@ -16,11 +16,22 @@
   --button-start-color: #197b2a;
   --button-bet-color: #252525;
   --input-color: #484848;
-  
+  --level-active: #ebdb00;
+
   /* container */
   --container-width: 1240px;
   --container-padding: 15px;
 
   /* transition */
   --transition-time: 0.2s;
+
+  /* layers */
+  --layer-negative: -1;
+  --layer-0: 0;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+  --layer-4: 4;
+  --layer-5: 5;
+  --layer-6: 6;
 }

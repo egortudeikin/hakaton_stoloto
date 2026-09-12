@@ -1,0 +1,148 @@
+.game {
+  width: 100%;
+}
+
+.game__container {
+  position: relative;
+  width: 100%;
+  height: 763px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 179, 225, 0.71) 0%,
+    rgba(0, 203, 255, 0.71) 50%,
+    rgba(173, 255, 255, 0.71) 100%
+  );
+}
+
+.game__bird {
+  position: absolute;
+  object-fit: contain;
+  z-index: var(--layer-2);
+}
+
+.game__bird--left {
+  top: 25px;
+  left: 17%;
+}
+
+.game__bird--center {
+  top: 20px;
+  left: 48%;
+}
+
+.game__bird--right {
+  top: 55px;
+  right: 7%;
+}
+
+.game__clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: var(--layer-1);
+    pointer-events: none;
+}
+
+.game__cloud {
+    position: absolute;
+    display: block;
+    height: auto;
+}
+
+.game__cloud--left {
+    top: 15px;
+    left: 10%;
+}
+
+.game__cloud--right {
+    top: 30px;
+    right: 10%;
+}
+
+.game__levels {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: var(--layer-4);
+}
+
+.game__levels::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  transform: translateX(-50%);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.game__level {
+  position: relative;
+  max-width: 68px;
+  max-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--layer-2);
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 12px 21px;
+}
+
+.game__level-number {
+  position: relative;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 45px;
+  color: var(--text-secondary-color);
+}
+
+.game__level--active {
+    background-color: var(--level-active);
+    transform: scale(1.08);
+}
+
+.game__ratio {
+    position: absolute;
+    top: 175px;
+    left: 50%;
+    display: flex;
+    align-items: baseline;
+    transform: translateX(-50%);
+    z-index: var(--layer-5);
+    color: var(--text-main-color);
+    user-select: none;
+}
+
+.game__ratio-value,
+.game__ratio-symbol {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.game__ratio-symbol {
+    margin-left: 4px;
+}
+
+.game__ball {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+    z-index: var(--layer-6);
+}
+
+.game__ball--red {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
