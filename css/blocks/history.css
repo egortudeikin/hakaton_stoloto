@@ -1,25 +1,25 @@
-.container__card-description{
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 25px;
-    background-color: var( --balance-bg-color);
-    height: 86px;
-    padding: 0 10px;
+.container__card-description {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 25px;
+  background-color: var(--balance-bg-color);
+  padding: 10px;
+  margin-bottom: 5px;
 }
-.history__card{
-    background-color: var(--grey-history-color);
-    width: 63px;
-    height: 59px;
-    border-radius: 25px;
-    background-color: var(--green-history-color);
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    padding: 10;
-    margin: 0;
-    color: var(--text-main-color);
-    font-size: 30px;
-    font-family: var(--second-family);
+
+.history__card {
+  background-color: var(--grey-history-color);
+  border-radius: 25px;
+  background-color: var(--green-history-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  margin: 0;
+  color: var(--text-main-color);
+  font-size: 30px;
+  font-family: var(--second-family);
 }

@@ -1,5 +1,6 @@
 .game {
   width: 100%;
+  margin-bottom: 16px;
 }
 
 .game__container {
@@ -64,25 +65,26 @@
 
 .game__levels {
   position: absolute;
-  top: 25px;
+  bottom: 25px;
   left: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  z-index: var(--layer-4);
+  z-index: var(--layer-5);
 }
 
 .game__levels::before {
   content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
+  top: 34px;
+  bottom: 34px;
   left: 50%;
-  width: 4px;
+  width: 9px;
   transform: translateX(-50%);
-  color: #fff;
-  border-radius: 10px;
+  background-color: #fff;
+  border-radius: 50px;
+  z-index: var(--layer-0);
 }
 
 .game__level {
@@ -141,7 +143,8 @@
     z-index: var(--layer-6);
 }
 
-.game__ball--red {
+.game__ball--red,
+.game__ball--green {
     display: block;
     width: 100%;
     height: 100%;

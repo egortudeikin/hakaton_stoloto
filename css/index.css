@@ -7,7 +7,6 @@
 /* blocks */
 @import "./blocks/header.css";
 @import "./blocks/history.css";
-@import "./blocks/header.css";
-@import "./blocks/stake.css";
-@import "./blocks/theme-select.css";
 @import "./blocks/game.css";
+@import "./blocks/stake.css";
+@import "./blocks/index-page.css";

@@ -1,12 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru" class="page">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Хакатон</title>
-    <link rel="stylesheet" href="./css/index.css">
-</head>
-<body class="page__body">
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Выберите шар — Воздушный шар</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="page__body">
+    <header class="container header__container">
+      <svg width="381px" height="73px">
+        <use href="./decor/logo.svg"></use>
+      </svg>
+      <nav class="header__navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__item-link">меню</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="header__balance">5200</p>
+    </header>
+    <main class="main">
+      <section class="section theme-select">
+        <div class="theme-select__inner container">
+          <h1 class="theme-select__title">Выберите шар</h1>
+          <p class="theme-select__subtitle">большой риск – большая награда</p>
+          <div class="theme-select__list">
+            <article class="theme-select__card theme-select__card--green">
+              <img
+                class="theme-select__balloon"
+                src="./decor/green-ball.svg"
+                alt="Зелёный шар"
+              />
+              <div class="theme-select__stats">
+                <div class="theme-select__stat">
+                  <span class="theme-select__stat-value">1,5–5,0</span>
+                  <span class="theme-select__stat-caption"
+                    >средний коэффициент</span
+                  >
+                </div>
+                <div class="theme-select__stat">
+                  <span class="theme-select__stat-title">Риск</span>
+                  <span
+                    class="theme-select__stat-risk theme-select__stat-risk--low"
+                    >низкий</span
+                  >
+                </div>
+              </div>
+              <span class="theme-select__levels">9 уровней</span>
+              <a
+                class="theme-select__button theme-select__button--green"
+                href="./game-green-ball.html"
+                >Выбрать</a
+              >
+            </article>
+            <article class="theme-select__card theme-select__card--red">
+              <img
+                class="theme-select__balloon"
+                src="./decor/red-ball.svg"
+                alt="Красный шар"
+              />
+              <div class="theme-select__stats">
+                <div class="theme-select__stat">
+                  <span class="theme-select__stat-value">3,0–10,0</span>
+                  <span class="theme-select__stat-caption"
+                    >средний коэффициент</span
+                  >
+                </div>
+                <div class="theme-select__stat">
+                  <span class="theme-select__stat-title">Риск</span>
+                  <span
+                    class="theme-select__stat-risk theme-select__stat-risk--high"
+                    >высокий</span
+                  >
+                </div>
+              </div>
+              <span class="theme-select__levels">12 уровней</span>
+              <a
+                class="theme-select__button theme-select__button--red"
+                href="./game-red-ball.html"
+                >Выбрать</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

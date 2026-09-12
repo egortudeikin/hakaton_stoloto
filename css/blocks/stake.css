@@ -1,4 +1,4 @@
-.stake {
+.stake__container {
   display: flex;
   align-items: stretch;
   gap: 16px;
