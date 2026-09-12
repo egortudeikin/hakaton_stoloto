@@ -22,7 +22,7 @@
     </header>
     <main class="main">
       <section class="section history">
-        <div class="container container__card-description">
+        <div id="history" class="container container__card-description">
           <article class="history__card">
             <p class="history__card-description">1.10</p>
           </article>
@@ -84,19 +84,19 @@
       </section>
       <section class="section game">
         <div class="container">
-          <div class="game__container">
+          <div id="game" class="game__container">
             <div class="game__birds">
-              <svg class="game__bird game__bird--left" width="101" height="101">
+              <svg id="bird-left" class="game__bird game__bird--left" width="101" height="101">
                 <use href="./decor/bird.svg"></use>
               </svg>
-              <svg
+              <svg id="bird-center"
                 class="game__bird game__bird--center"
                 width="101"
                 height="101"
               >
                 <use href="./decor/bird.svg"></use>
               </svg>
-              <svg
+              <svg id="bird-right"
                 class="game__bird game__bird--right"
                 width="101"
                 height="101"
@@ -104,15 +104,15 @@
                 <use href="./decor/bird.svg"></use>
               </svg>
             </div>
-            <div class="game__clouds">
-              <svg
+            <div id="clouds" class="game__clouds">
+              <svg id="cloud-left"
                 class="game__cloud game__cloud--left"
                 width="340"
                 height="148"
               >
                 <use href="./decor/cloud1.svg"></use>
               </svg>
-              <svg
+              <svg id="cloud-right"
                 class="game__cloud game__cloud--right"
                 width="339"
                 height="138"
@@ -120,14 +120,14 @@
                 <use href="./decor/cloud2.svg"></use>
               </svg>
             </div>
-            <div class="game__levels">
-              <div class="game__level game__level--no-active" data-level="12">
+            <div id="levels" class="game__levels">
+              <div class="game__level game__level--no-active" data-level="9">
                 <p class="game__level-number">12</p>
               </div>
-              <div class="game__level game__level--no-active" data-level="11">
+              <div class="game__level game__level--no-active" data-level="9">
                 <p class="game__level-number">11</p>
               </div>
-              <div class="game__level game__level--no-active" data-level="10">
+              <div class="game__level game__level--no-active" data-level="9">
                 <p class="game__level-number">10</p>
               </div>
               <div class="game__level game__level--no-active" data-level="9">
@@ -159,11 +159,11 @@
               </div>
             </div>
             <div class="game__ratio">
-              <p class="game__ratio-value">1.00</p>
+              <p id="ratio" class="game__ratio-value">1.00</p>
               <p class="game__ratio-symbol">x</p>
             </div>
-            <div class="game__ball">
-              <svg class="game__ball--red" width="176" height="235">
+            <div id="ball" class="game__ball">
+              <svg class="game__ball--green" width="176" height="235">
                 <use href="./decor/red-ball.svg"></use>
               </svg>
             </div>
@@ -172,7 +172,7 @@
       </section>
       <section class="section stake">
         <div class="container stake__container">
-          <ul class="stake__list">
+          <ul id="stakes" class="stake__list">
             <li class="stake__item" data-bet="10" data-booster="1">
               <span class="stake__item-label">осколок I</span>
               <span class="stake__item-value">10 бонусов</span>
@@ -194,7 +194,7 @@
               <span class="stake__item-booster">бустер x4</span>
             </li>
           </ul>
-          <button class="stake__button" type="button" disabled>
+          <button id="start-game" class="stake__button" type="button" disabled>
             <span class="stake__button-text">начать</span>
           </button>
         </div>
