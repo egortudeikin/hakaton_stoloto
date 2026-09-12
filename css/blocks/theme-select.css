@@ -132,3 +132,62 @@
     align-items: center;
   }
 }
+
+.theme-select__balloon {
+    width: 176px;
+    height: 235px;
+    object-fit: contain;
+
+    transform-origin: 50% 90%;
+    animation: balloon-sway 2.5s ease-in-out infinite;
+}
+
+@keyframes balloon-sway {
+    0%,
+    100% {
+        transform: rotate(-3deg);
+    }
+
+    50% {
+        transform: rotate(3deg);
+    }
+}
+
+@keyframes balloon-sway {
+    0%,
+    100% {
+        transform: translateY(0) rotate(-3deg);
+    }
+
+    50% {
+        transform: translateY(-8px) rotate(3deg);
+    }
+}
+
+.theme-select__button {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        filter 0.2s ease;
+}
+
+.theme-select__button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+}
+
+.theme-select__button:active {
+    transform: scale(0.95);
+}
+
+.theme-select__button--green:hover {
+    box-shadow:
+        0 0 10px rgba(46, 190, 130, 0.6),
+        0 0 25px rgba(46, 190, 130, 0.4);
+}
+
+.theme-select__button--red:hover {
+    box-shadow:
+        0 0 10px rgba(220, 50, 50, 0.6),
+        0 0 25px rgba(220, 50, 50, 0.4);
+}
