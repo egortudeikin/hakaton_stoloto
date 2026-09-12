@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выберите шар — Воздушный шар</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body class="page__body">
+
+<section class="theme-select">
+  <div class="theme-select__inner container">
+    <h1 class="theme-select__title">Выберите шар</h1>
+    <p class="theme-select__subtitle">большой риск – большая награда</p>
+
+    <div class="theme-select__list">
+
+      <article class="theme-select__card theme-select__card--green">
+        <svg class="theme-select__balloon" width="176" height="235" viewBox="0 0 176 235">
+          <use href="./decor/sprite-game.svg#green-ball"></use>
+        </svg>
+
+        <div class="theme-select__stats">
+          <div class="theme-select__stat">
+            <span class="theme-select__stat-value">1,5–5,0</span>
+            <span class="theme-select__stat-caption">средний коэффициент</span>
+          </div>
+          <div class="theme-select__stat">
+            <span class="theme-select__stat-title">Риск</span>
+            <span class="theme-select__stat-risk theme-select__stat-risk--low">низкий</span>
+          </div>
+        </div>
+
+        <span class="theme-select__levels">9 уровней</span>
+
+        <a class="theme-select__button theme-select__button--green" href="#">Выбрать</a>
+      </article>
+
+      <article class="theme-select__card theme-select__card--red">
+        <svg class="theme-select__balloon" width="176" height="235" viewBox="0 0 176 235">
+          <use href="./decor/sprite-game.svg#red-ball"></use>
+        </svg>
+
+        <div class="theme-select__stats">
+          <div class="theme-select__stat">
+            <span class="theme-select__stat-value">3,0–10,0</span>
+            <span class="theme-select__stat-caption">средний коэффициент</span>
+          </div>
+          <div class="theme-select__stat">
+            <span class="theme-select__stat-title">Риск</span>
+            <span class="theme-select__stat-risk theme-select__stat-risk--high">высокий</span>
+          </div>
+        </div>
+
+        <span class="theme-select__levels">12 уровней</span>
+
+        <a class="theme-select__button theme-select__button--red" href="#">Выбрать</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
