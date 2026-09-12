@@ -1,5 +1,33 @@
-.header {
+.header__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.navigation__item{
+    width: 136px;      
+    height: 50px;
+}
+.navigation__item-link{
+    color: var(--text-main-color);  
+    opacity: 0.8;  
+    font-size: 50px;
+    font-family: var(--second-family);
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    height: 100%;             
+    text-decoration: none;
+}
+.header__balance{
+    width: 218px;      
+    height: 50px;
+    opacity: 0.9;
+    border-radius: 20px;
+    background-color: var(--balance-bg-color);
+    font-size: 50px;
+    font-family: var(--second-family);
+    color: var(--text-main-color);
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
