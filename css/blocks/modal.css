@@ -1,0 +1,135 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal[hidden] {
+  display: none;
+}
+
+.modal__window {
+  position: relative;
+  width: min(520px, 100% - 32px);
+  padding: 44px 32px 32px;
+  background-color: var(--balance-bg-color);
+  border-radius: 24px;
+  text-align: center;
+}
+
+.modal__window-header {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+}
+
+.modal__window-cross {
+  cursor: pointer;
+}
+
+.modal__window-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__window-title {
+  margin: 0 0 20px;
+  font-family: var(--font3);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.modal-win .modal__window-title {
+  color: #31cb7e;
+}
+
+.modal-lose .modal__window-title {
+  color: #eba552;
+}
+
+.modal__window-trophy,
+.modal__window-crash-icon {
+  margin-bottom: 12px;
+}
+
+.modal__window-ratio {
+  margin: 0 0 8px;
+  font-family: var(--font3);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--text-main-color);
+}
+
+.modal__window-description--top {
+  width: 100%;
+  margin: 0 0 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-family: var(--font3);
+  font-size: 20px;
+  color: var(--text-main-color);
+}
+
+.modal__window-description--accent-yellow {
+  color: #f2c94c;
+}
+
+.modal__window-description--accent-grey {
+  color: #888d96;
+}
+
+.modal__window-description--bottom {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 32px;
+  font-family: var(--font3);
+  font-size: 20px;
+}
+
+.modal-win .modal__window-description--bottom-left,
+.modal-win .modal__window-description--bottom-right {
+  color: #31cb7e;
+}
+
+.modal-lose .modal__window-description--bottom-left,
+.modal-lose .modal__window-description--bottom-right {
+  color: #cd3c3d;
+}
+
+.modal__window-buttons {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.modal__window-button {
+  flex: 1 1 0;
+  padding: 16px;
+  border: none;
+  border-radius: 999px;
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-main-color);
+  cursor: pointer;
+}
+
+.button-exit {
+  background-color: #714040;
+}
+
+.button-play-again {
+  background-color: #31cb7e;
+}
+
+@media (max-width: 500px) {
+  .modal__window-buttons {
+    flex-direction: column;
+  }
+}

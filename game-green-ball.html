@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Хакатон</title>
+    <title>Игра - зелёный воздушный шар</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/blocks/theme-select.css">
+    <link rel="stylesheet" href="./css/blocks/game.css">
+    <link rel="stylesheet" href="./css/blocks/rules.css">
   </head>
   <body class="page__body">
     <header class="container header__container">
@@ -14,7 +17,13 @@
       <nav class="header__navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="./index.html" class="navigation__item-link">меню</a>
+            <a href="./index.html" class="navigation__item-link">Меню</a>
+          </li>
+          <li class="navigation__item">
+          <a href="#rules" class="navigation__item-link">Правила</a>
+          </li>
+          <li class="navigation__item">
+            <a href="./rating.html" class="navigation__item-link">Рейтинг</a>
           </li>
         </ul>
       </nav>
@@ -191,5 +200,157 @@
         </div>
       </section>
     </main>
+    <div class="result-popup" id="win-popup">
+    <div class="result-popup__card result-popup__card--win">
+
+        <button class="result-popup__close" type="button">×</button>
+
+        <h2 class="result-popup__title">
+            ПОБЕДА!
+        </h2>
+
+        <img
+            class="result-popup__image"
+            src="./decor/trophy.svg"
+            alt="Трофей"
+        >
+
+        <p class="result-popup__multiplier">
+            13.45x
+        </p>
+
+        <div class="result-popup__line"></div>
+
+        <p class="result-popup__text">
+            могли забрать –
+            <span class="result-popup__highlight">15.55x</span>
+        </p>
+
+        <div class="result-popup__numbers result-popup__numbers--win">
+            <span>1345 B</span>
+            <span>130 elo</span>
+        </div>
+
+        <div class="result-popup__line"></div>
+
+        <div class="result-popup__buttons">
+            <a
+                class="result-popup__button result-popup__button--exit"
+                href="./index.html"
+            >
+                Выйти
+            </a>
+
+            <button
+                class="result-popup__button result-popup__button--again"
+                type="button"
+            >
+                Играть снова
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<div class="result-popup" id="lose-popup">
+    <div class="result-popup__card result-popup__card--lose">
+
+        <button class="result-popup__close" type="button">×</button>
+
+        <h2 class="result-popup__title">
+            НЕ ПОВЕЗЛО!
+        </h2>
+
+        <img
+            class="result-popup__image"
+            src="./decor/bomb.svg"
+            alt="Взрыв"
+        >
+
+        <p class="result-popup__multiplier">
+            1.55x
+        </p>
+
+        <div class="result-popup__line"></div>
+
+        <p class="result-popup__text">
+            раунд окончен –
+            <span class="result-popup__highlight">1.55x</span>
+        </p>
+
+        <div class="result-popup__numbers result-popup__numbers--lose">
+            <span>100 B</span>
+            <span>50 elo</span>
+        </div>
+
+        <div class="result-popup__line"></div>
+
+        <div class="result-popup__buttons">
+            <a
+                class="result-popup__button result-popup__button--exit"
+                href="./index.html"
+            >
+                Выйти
+            </a>
+
+            <button
+                class="result-popup__button result-popup__button--again"
+                type="button"
+            >
+                Сыграть снова
+            </button>
+        </div>
+    </div>
+</div>
+<div id="rules" class="rules-popup">
+
+  <div class="rules-popup__content">
+
+    <a href="#" class="rules-popup__close" aria-label="Закрыть">
+      ×
+    </a>
+
+    <h2 class="rules-popup__title">
+      Правила
+    </h2>
+
+    <div class="rules-popup__text">
+
+      <p>
+        Выберите шар: красный — 12 уровней,
+        зелёный — 9.
+      </p>
+
+      <p>
+        Чем выше уровень, тем больше коэффициент и выигрыш.
+      </p>
+
+      <p>
+        Шар взлетает, коэффициент растёт.
+      </p>
+
+      <p>
+        В любой момент после первого уровня нажмите
+        «Забрать» — ставка умножится на текущий коэффициент,
+        и выигрыш зафиксируется.
+      </p>
+
+      <p>
+        Если не успеете — шар лопнет, и ставка сгорит.
+      </p>
+
+      <p>
+        За каждый пройденный уровень начисляются игровые очки.
+      </p>
+
+      <p>
+        Бустер на одном из уровней резко увеличивает коэффициент.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
   </body>
 </html>

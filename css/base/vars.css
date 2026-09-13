@@ -1,7 +1,7 @@
 :root {
   /* font-family */
-  --font-family: "Inter", sans-serif;
-  --second-family: "JejuMyeongjo", sans-serif;
+  --font-family: "JejuMyeongjo", sans-serif;
+  --second-family: "Inter", sans-serif;
   --third-family: "Sora", sans-serif;
   --font3: "Young Serif", sans-serif;
 
@@ -12,6 +12,7 @@
   --yellow-history-color: #d69e2e;
   --red-history-color: #d62e2e;
   --text-main-color: #fff;
+  --text-main-opacity-color: #ffffff66;
   --text-secondary-color: #000;
   --button-start-color: #197b2a;
   --button-bet-color: #252525;
