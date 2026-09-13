@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Админ панель</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="page__body">
+    <section class="admin">
+        <header class="admin__header">
+            <h1 class="admin__title">Админ-панель</h1>
+            <header__button class="admin__header__button">
+                <button type="button" class="admin__button" data-action="save">Сохранить</button>
+                <button type="button" class="admin__button" data-action="apply">Применить</button>
+                <button type="button" class="admin__button" data-action="reset">Сбросить</button>
+            </header__button>
+        </header>
+        <section class="admin__group" data-group="base">
+            <h2 class="admin__group-title">Базовые</h2>
+            <div class="admin__row">
+                <button type="button" class="admin__function" data-function="base-1">Функция</button>
+                <button type="button" class="admin__function" data-function="base-2">Функция</button>
+                <button type="button" class="admin__function" data-function="base-3">Функция</button>
+            </div>
+        </section>
+
+        <!-- Мат. модель -->
+        <section class="admin__group" data-group="math">
+        <h2 class="admin__group-title">Мат. модель</h2>
+        <div class="admin__row">
+            <button type="button" class="admin__function" data-function="math-1">Функция</button>
+            <button type="button" class="admin__function" data-function="math-2">Функция</button>
+            <button type="button" class="admin__function" data-function="math-3">Функция</button>
+        </div>
+        </section>
+
+        <!-- Бустеры -->
+        <section class="admin__group" data-group="boosters">
+        <h2 class="admin__group-title">Бустеры</h2>
+        <div class="admin__row">
+            <button type="button" class="admin__function" data-function="boost-1">Функция</button>
+            <button type="button" class="admin__function" data-function="boost-2">Функция</button>
+            <button type="button" class="admin__function" data-function="boost-3">Функция</button>
+        </div>
+        </section>
+
+        <!-- Начисление очков -->
+        <section class="admin__group" data-group="score">
+        <h2 class="admin__group-title">Начисление очков</h2>
+        <div class="admin__row">
+            <button type="button" class="admin__function" data-function="score-1">Функция</button>
+            <button type="button" class="admin__function" data-function="score-2">Функция</button>
+            <button type="button" class="admin__function" data-function="score-3">Функция</button>
+        </div>
+        </section>
+
+        <!-- Прочие параметры -->
+        <section class="admin__group" data-group="other">
+        <h2 class="admin__group-title">Прочие параметры</h2>
+        <div class="admin__row">
+            <button type="button" class="admin__function" data-function="other-1">Функция</button>
+            <button type="button" class="admin__function" data-function="other-2">Функция</button>
+            <button type="button" class="admin__function" data-function="other-3">Функция</button>
+        </div>
+        <div class="admin__row">
+            <button type="button" class="admin__function" data-function="other-4">Функция</button>
+            <button type="button" class="admin__function" data-function="other-5">Функция</button>
+            <button type="button" class="admin__function" data-function="other-6">Функция</button>
+        </div>
+        </section>
+
+  </section>
+
+  <script src="admin.js"></script>
+  </body>
+</html>
