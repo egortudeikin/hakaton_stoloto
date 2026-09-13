@@ -1,0 +1,94 @@
+.main__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 36px;
+  margin-top: 90px;
+}
+
+.main__title {
+  font-family: var(--second-family);
+  color: var(--text-main-color);
+}
+/* на размере больше 724px размер текста 60px */
+@media (width > 724px) {
+  .main__title {
+    font-size: 60px;
+  }
+}
+/* на размере меньше или равно 724px размер текста 40px */
+@media (width <= 724px) {
+  .main__title {
+    font-size: 40px;
+  }
+}
+
+.form__container {
+  background: #3a4553;
+  border-radius: 38px;
+  padding: clamp(37px, 1.26rem + 4.68vw, 110px)
+    clamp(12px, -0.043rem + 3.53vw, 67px) clamp(31px, 1.62rem + 1.41vw, 53px);
+  margin-right: clamp(30px, -5.625rem + 33.33vw, 550px);
+  margin-left: clamp(30px, -5.625rem + 33.33vw, 550px);
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  border: none;
+  margin-bottom: 31px;
+}
+
+.form__input {
+  width: clamp(271px, 11.168rem + 25.64vw, 671px);
+  font-size: clamp(18px, 0.952rem + 0.77vw, 30px);
+  padding-top: 36px;
+  padding-left: 34px;
+  padding-bottom: 26px;
+  border-radius: 20px;
+  box-shadow: 3px 0 15px 0 rgba(0, 0, 0, 0.25);
+  background: rgba(235, 235, 235, 0.51);
+}
+
+.form__button {
+  max-width: 451px;
+  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.25);
+  background: #e6dec9;
+  border-radius: 38px;
+  color: var(--main-disabled-color);
+  font-size: 25px;
+  padding: clamp(23px, 1.322rem + 0.51vw, 31px)
+    clamp(93px, 5.466rem + 1.54vw, 117px);
+  text-wrap: nowrap;
+  text-align: center;
+  margin-bottom: 15px;
+  transition:
+    background-color var(--transition-time),
+    color var(--transition-time);
+}
+
+.form__description {
+  color: var(--text-main-opacity-color);
+  text-align: center;
+  font-size: clamp(10px, 0.524rem + 0.45vw, 17px);
+}
+
+.form__description--accent {
+  color: var(--text-main-color);
+}
+
+@media (any-hover: hover) {
+  .form__button:hover {
+    background-color: var(--accent-color);
+    color: var(--main-color);
+  }
+}

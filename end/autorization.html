@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="./css/index.css"/>
+  </head>
+  <body class="page__body">
+    <main class="main">
+      <div class="container main__container">
+        <h1 class="main__title">Авторизация</h1>
+        <div class="form__container">
+          <form class="form">
+            <fieldset class="form__fieldset">
+              <input
+                type="text"
+                placeholder="Логин"
+                required
+                class="form__input"
+              />
+              <input
+                type="password"
+                placeholder="Пароль"
+                required
+                class="form__input"
+              />
+            </fieldset>
+            <button class="form__button button">Войти</button>
+            <p class="form__description">
+              Если до этого момента вы не были авторизованы, аккаунт создастся
+              автоматически с <span class="form__description--accent">введёнными вами данными</span>
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
