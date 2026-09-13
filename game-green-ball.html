@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/blocks/theme-select.css">
     <link rel="stylesheet" href="./css/blocks/game.css">
+    <link rel="stylesheet" href="./css/blocks/rules.css">
   </head>
   <body class="page__body">
     <header class="container header__container">
@@ -19,7 +20,7 @@
             <a href="./index.html" class="navigation__item-link">Меню</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__item-link">Правила</a>
+          <a href="#rules" class="navigation__item-link">Правила</a>
           </li>
           <li class="navigation__item">
             <a href="./rating.html" class="navigation__item-link">Рейтинг</a>
@@ -300,6 +301,56 @@
             </button>
         </div>
     </div>
+</div>
+<div id="rules" class="rules-popup">
+
+  <div class="rules-popup__content">
+
+    <a href="#" class="rules-popup__close" aria-label="Закрыть">
+      ×
+    </a>
+
+    <h2 class="rules-popup__title">
+      Правила
+    </h2>
+
+    <div class="rules-popup__text">
+
+      <p>
+        Выберите шар: красный — 12 уровней,
+        зелёный — 9.
+      </p>
+
+      <p>
+        Чем выше уровень, тем больше коэффициент и выигрыш.
+      </p>
+
+      <p>
+        Шар взлетает, коэффициент растёт.
+      </p>
+
+      <p>
+        В любой момент после первого уровня нажмите
+        «Забрать» — ставка умножится на текущий коэффициент,
+        и выигрыш зафиксируется.
+      </p>
+
+      <p>
+        Если не успеете — шар лопнет, и ставка сгорит.
+      </p>
+
+      <p>
+        За каждый пройденный уровень начисляются игровые очки.
+      </p>
+
+      <p>
+        Бустер на одном из уровней резко увеличивает коэффициент.
+      </p>
+
+    </div>
+
+  </div>
+
 </div>
   </body>
 </html>
