@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Выберите шар — Воздушный шар</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <script defer src="./js/index.js" type="module"></script>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__container container">
+        <svg class="header__logo" width="381px" height="73px">
+          <use href="./decor/logo.svg"></use>
+        </svg>
+        <svg class="header__mini-logo" width="67" height="57">
+          <use href="./decor/mini-logo.svg"></use>
+        </svg>
+        <nav class="header__menu" id="header__menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="./index.html" class="menu__item-link">Меню</a>
+            </li>
+            <li class="menu__item">
+              <a href="#rules" class="menu__item-link">Правила</a>
+            </li>
+            <li class="menu__item">
+              <a href="./rating.html" class="menu__item-link">Рейтинг</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__right-info">
+          <p class="header__balance">5200</p>
+          <button
+            class="header__burger burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="header__menu"
+          >
+            <svg width="48" height="48">
+              <use
+                class="burger__icon-menu"
+                href="./decor/burger-menu.svg"
+              ></use>
+              <use class="burger__icon-cross" href="./decor/cross.svg"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section theme-select">
+        <div class="theme-select__inner container">
+          <h1 class="theme-select__title">Выберите шар</h1>
+          <p class="theme-select__subtitle">большой риск – большая награда</p>
+          <div class="theme-select__list">
+            <article class="theme-select__card theme-select__card--green">
+              <img
+                class="theme-select__balloon"
+                src="./decor/green-ball.svg"
+                alt="Зелёный шар"
+              />
+              <div class="theme-select__stats">
+                <div class="theme-select__stat">
+                  <span class="theme-select__stat-value">1,5–5,0</span>
+                  <span class="theme-select__stat-caption"
+                    >средний коэффициент</span
+                  >
+                </div>
+                <div class="theme-select__stat">
+                  <span class="theme-select__stat-title">Риск</span>
+                  <span
+                    class="theme-select__stat-risk theme-select__stat-risk--low"
+                    >низкий</span
+                  >
+                </div>
+              </div>
+              <span class="theme-select__levels">9 уровней</span>
+              <a
+                class="theme-select__button theme-select__button--green"
+                href="./game-green-ball.html"
+                >Выбрать</a
+              >
+            </article>
+            <article class="theme-select__card theme-select__card--red">
+              <img
+                class="theme-select__balloon"
+                src="./decor/red-ball.svg"
+                alt="Красный шар"
+              />
+              <div class="theme-select__stats">
+                <div class="theme-select__stat">
+                  <span class="theme-select__stat-value">3,0–10,0</span>
+                  <span class="theme-select__stat-caption"
+                    >средний коэффициент</span
+                  >
+                </div>
+                <div class="theme-select__stat">
+                  <span class="theme-select__stat-title">Риск</span>
+                  <span
+                    class="theme-select__stat-risk theme-select__stat-risk--high"
+                    >высокий</span
+                  >
+                </div>
+              </div>
+              <span class="theme-select__levels">12 уровней</span>
+              <a
+                class="theme-select__button theme-select__button--red"
+                href="./game-red-ball.html"
+                >Выбрать</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="rules" class="rules-popup">
+      <div class="rules-popup__content">
+        <a href="#" class="rules-popup__close" aria-label="Закрыть"> × </a>
+
+        <h2 class="rules-popup__title">Правила</h2>
+
+        <div class="rules-popup__text">
+          <p>Выберите шар: красный — 12 уровней, зелёный — 9.</p>
+
+          <p>Чем выше уровень, тем больше коэффициент и выигрыш.</p>
+
+          <p>Шар взлетает, коэффициент растёт.</p>
+
+          <p>
+            В любой момент после первого уровня нажмите «Забрать» — ставка
+            умножится на текущий коэффициент, и выигрыш зафиксируется.
+          </p>
+
+          <p>Если не успеете — шар лопнет, и ставка сгорит.</p>
+
+          <p>За каждый пройденный уровень начисляются игровые очки.</p>
+
+          <p>Бустер на одном из уровней резко увеличивает коэффициент.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

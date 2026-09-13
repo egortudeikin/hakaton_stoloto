@@ -1,0 +1,134 @@
+.theme-select {
+  padding-block: 60px;
+}
+
+.theme-select__inner {
+  text-align: center;
+}
+
+.theme-select__title {
+  margin: 0 0 8px;
+  font-family: var(--font3);
+  font-size: 44px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.theme-select__subtitle {
+  margin: 0 0 40px;
+  font-family: var(--font-family);
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.theme-select__list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.theme-select__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 420px;
+  padding: 32px 28px 28px;
+  background-color: #1e293a;
+  border: 2px solid transparent;
+  border-radius: 24px;
+}
+
+.theme-select__card--green {
+  border-color: #22c55e;
+}
+
+.theme-select__card--red {
+  border-color: #ef4444;
+}
+
+.theme-select__balloon {
+  margin-bottom: 24px;
+}
+
+.theme-select__stats {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.theme-select__stat {
+  flex: 1 1 0;
+  padding: 16px 12px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border-radius: 14px;
+  text-align: center;
+}
+
+.theme-select__stat-value,
+.theme-select__stat-title {
+  display: block;
+  margin: 0 0 6px;
+  font-family: var(--font3);
+  font-size: 24px;
+  color: var(--text-main-color);
+}
+
+.theme-select__stat-caption {
+  display: block;
+  font-family: var(--font-family);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.theme-select__stat-risk {
+  display: block;
+  font-family: var(--third-family);
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.theme-select__stat-risk--low {
+  color: #22c55e;
+}
+
+.theme-select__stat-risk--high {
+  color: #ef4444;
+}
+
+.theme-select__levels {
+  margin-bottom: 20px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: var(--text-main-color);
+}
+
+.theme-select__button {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border-radius: 999px;
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-main-color);
+}
+
+.theme-select__button--green {
+  background-color: #2b9f6d;
+}
+
+.theme-select__button--red {
+  background-color: #b02c30;
+}
+
+@media (max-width: 900px) {
+  .theme-select__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}

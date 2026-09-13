@@ -1,0 +1,152 @@
+.rating__title {
+  font-weight: 400;
+  text-align: center;
+  color: #e8e8e8;
+  opacity: 0.8;
+}
+
+@media (width > 1024px) {
+    .rating__title {
+        font-size: 100px;
+    }
+}
+
+@media (width <= 1024px) {
+    .rating__title {
+        font-size: 80px;
+    }
+}
+
+@media (width <= 524px) {
+    .rating__title {
+        font-size: 70px;
+    }
+}
+
+.rating__description {
+  font-weight: 400;
+  text-align: center;
+  color: var(--text-main-opacity-color);
+  margin-bottom: 40px;
+}
+
+.rating__description--accent {
+  color: var(--text-main-color);
+}
+
+@media (width > 1024px) {
+    .rating__description {
+        font-size: 40px;
+    }
+}
+
+@media (width <= 1024px) {
+    .rating__description {
+        font-size: 30px;
+    }
+}
+
+@media (width <= 524px) {
+    .rating__description {
+        font-size: 20px;
+    }
+}
+
+.rating__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rating__list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e293b;
+  border-radius: 30px;
+}
+
+@media (width > 768px) {
+    .rating__list-item {
+        padding: 20px 22px;
+    }
+}
+
+@media (width <= 768px) {
+    .rating__list-item {
+        padding: 16px 18px;
+    }
+}
+
+.rating__list-item-top-1 {
+  background: rgba(214, 158, 46, 0.6);
+}
+
+.rating__list-item-top-2 {
+  background: rgba(160, 174, 192, 0.6);
+}
+
+.rating__list-item-top-3 {
+  background: rgba(183, 121, 31, 0.4);
+}
+
+.rating__info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.rating__name {
+  font-weight: 400;
+  color: var(--text-main-color);
+}
+
+@media (width > 768px) {
+    .rating__name {
+        font-size: 60px;
+    }
+}
+
+@media (width <= 768px) {
+    .rating__name {
+        font-size: 40px;
+    }
+}
+
+.rating__position {
+  font-weight: 400;
+  color: var(--text-main-color);
+}
+
+@media (width > 768px) {
+    .rating__position {
+        font-size: 90px;
+    }
+}
+
+@media (width <= 768px) {
+    .rating__position {
+        font-size: 70px;
+    }
+}
+
+.rating__position-top-1 {
+  background: linear-gradient(180deg, #f2c94c 0%, rgba(235, 219, 0, 0.7) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rating__position-top-2 {
+  background: linear-gradient(180deg, #999 0%, #fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rating__position-top-3 {
+  background: linear-gradient(180deg, #8b5a2b 0%, #d69e2e 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
